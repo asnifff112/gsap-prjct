@@ -18,13 +18,27 @@ export default function Navbar() {
           Home
         </Link>
 
-        <Link href="/about" className={isActive("/about")}>
-          About
+        <Link href="/gsapTo" className={isActive("/gsapTo")}>
+          gsapTo
         </Link>
 
-        <Link href="/users" className={isActive("/users")}>
-          Users
+        <Link href="/gsapFrom" className={isActive("/gsapFrom")}>
+          gsapFrom
         </Link>
+
+        <Link href="/FromTo" className={isActive("/FromTo")}>
+         FromTo
+        </Link>
+
+         <Link href="/button" className={isActive("/button")}>
+          button
+        </Link>
+
+        <Link href="/timeline" className={isActive("/timeline")}>
+        timeline</Link>
+
+        <Link href="/allinOne" className={isActive("/allinOne")}>
+        all</Link>
       </div>
     </nav>
   );
