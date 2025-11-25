@@ -1,38 +1,65 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import gsap from "gsap";
 
-export default function GsapUseEffectExample() {
-  const box = useRef(null);
-  const box1 = useRef(null);
- 
-
+export default function Page() {
   useEffect(() => {
-    const tl = gsap.timeline({ defaults: { duration: 1 } });
+    const tl = gsap.timeline({
+      repeat: 1,     
+      yoyo: true,    
+      ease: "power2.out",
+    });
 
-    tl.from(box.current, { opacity: 1, y: -50 })
-      .from(box1.current, { opacity: 1, y: 50 }, )
-     
+    tl.to(".box", {
+      x: 400,
+      duration: 1,
+      yoyo:true
+    });
+    tl.to(".boxx",{
+        x:400,
+        duration:1,
+        repeat:-1,
+        yoyo:true,
+
+    });
+    tl.to(".boxxx",{
+        x:400,
+        duration:1,
+        repeat:-1,
+        yoyo:true,
+        stagger:2
+    })
   }, []);
 
   return (
-    <div >
-    <div
-        ref={box}
+    <div style={{ padding: "20px" }}>
+      <div
+        className="box"
         style={{
-          width: "120px",
-          height: "120px",
-          background: "blue",
+          width: "80px",
+          height: "80px",
+          background: "tomato",
+          borderRadius: "8px",
         }}
       ></div>
-        <div
-        ref={box1}
-        style={{
-          width: "120px",
-          height: "120px",
-          background: "blue",
-        }}
+      <div className="boxx"
+      style={{
+        width:"100px",
+        height:"100px",
+        background:"blue",
+        borderRadius:"10px"
+
+      }}
+      ></div>
+        <div className="boxxx"
+      style={{
+        width:"100px",
+        height:"100px",
+        background:"blue",
+        borderRadius:"10px"
+
+      }}
       ></div>
     </div>
   );

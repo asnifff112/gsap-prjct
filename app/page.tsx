@@ -7,21 +7,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function LandingPage() {
-  // HERO & TIMELINE REFS
+  
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  // OTHER REFS
+  
   const heroRef = useRef<HTMLDivElement>(null);
   const box1 = useRef<HTMLDivElement>(null);
   const box2 = useRef<HTMLDivElement>(null);
   const box3 = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  /* ---------------------------------------------------
-     1) TIMELINE ANIMATION 
-  ----------------------------------------------------*/
+  
   useEffect(() => {
     const tl = gsap.timeline({
       defaults: { duration: 1, ease: "power2.out" },
@@ -32,12 +30,10 @@ export default function LandingPage() {
       .from(buttonRef.current, { opacity: 0, scale: 0.5 });
   }, []);
 
-  /* ---------------------------------------------------
-     2) MAIN GSAP ANIMATIONS (HOVER + SCROLL + HERO)
-  ----------------------------------------------------*/
+ 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // HERO FADE-IN
+     
       gsap.from(heroRef.current, {
         opacity: 0,
         y: -40,
@@ -45,7 +41,7 @@ export default function LandingPage() {
         ease: "power2.out",
       });
 
-      // BOX HOVER ANIMATION
+      
       [box1, box2, box3].forEach((ref) => {
         const el = ref.current;
         if (!el) return;
@@ -59,7 +55,7 @@ export default function LandingPage() {
         });
       });
 
-      // SCROLLTRIGGER
+    
       gsap.from(sectionRef.current, {
         opacity: 0,
         y: 60,
@@ -78,7 +74,6 @@ export default function LandingPage() {
 
   return (
     <div>
-      {/* ---------------- HERO SECTION ---------------- */}
       <section
         ref={heroRef}
         className="h-screen bg-black text-white flex flex-col justify-center items-center"
@@ -101,7 +96,6 @@ export default function LandingPage() {
         <p className="mt-8 text-lg">hello haaii</p>
       </section>
 
-      {/* ---------------- BOX HOVER SECTION ---------------- */}
       <section className="py-20 bg-gray-100 flex justify-center gap-8 flex-wrap">
         <div
           ref={box1}
