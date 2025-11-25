@@ -30,8 +30,8 @@ export default function Navbar() {
          FromTo
         </Link>
 
-         <Link href="/button" className={isActive("/button")}>
-          button
+         <Link href="/scroll" className={isActive("/scroll")}>
+          scroll
         </Link>
 
         <Link href="/timeline" className={isActive("/timeline")}>
