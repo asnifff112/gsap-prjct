@@ -39,6 +39,9 @@ export default function Navbar() {
 
         <Link href="/allinOne" className={isActive("/allinOne")}>
         all</Link>
+
+        <Link href="/animation" className={isActive("/animation")}>
+        anime</Link>
       </div>
     </nav>
   );
