@@ -42,6 +42,9 @@ export default function Navbar() {
 
         <Link href="/animation" className={isActive("/animation")}>
         anime</Link>
+
+         <Link href="/button" className={isActive("/button")}>
+        button</Link>
       </div>
     </nav>
   );

@@ -79,11 +79,11 @@ export default function LandingPage() {
         className="h-screen bg-black text-white flex flex-col justify-center items-center"
       >
         <h1 ref={titleRef} className="text-5xl font-bold">
-          Welcome to GSAP Timeline
+          Welcome
         </h1>
 
         <p ref={subtitleRef} className="text-lg text-gray-300 mt-4">
-          Smooth, sequenced animations made easy!
+         hello how are you
         </p>
 
         <button
@@ -93,7 +93,7 @@ export default function LandingPage() {
           Get Started
         </button>
 
-        <p className="mt-8 text-lg">hello haaii</p>
+       
       </section>
 
       <section className="py-20 bg-gray-100 flex justify-center gap-8 flex-wrap">
@@ -122,7 +122,7 @@ export default function LandingPage() {
         ref={sectionRef}
         className="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-gray-50 to-white"
       >
-        <h2 className="text-5xl font-bold text-gray-800">Scroll Section</h2>
+        <h2 className="text-5xl font-bold text-gray-800">Scroll </h2>
         <p className="text-gray-600 mt-6 text-xl text-center max-w-2xl">
           nokku makkale nokku
         </p>

@@ -60,6 +60,8 @@ export default function Page() {
       y: 100,
       opacity: 0,
       duration: 1,
+       rotation :360,
+       scale:1.5,
       scrollTrigger: {
         trigger: ".box",
         start: "top 80%",   
