@@ -6,15 +6,15 @@ import gsap from "gsap";
 export default function Page() {
   useEffect(() => {
     const tl = gsap.timeline({
-      repeat: 1,     
-      yoyo: true,    
+        
+        
       ease: "power2.out",
     });
 
     tl.to(".box", {
       x: 400,
       duration: 1,
-      yoyo:true
+      
     });
     tl.to(".boxx",{
         x:400,

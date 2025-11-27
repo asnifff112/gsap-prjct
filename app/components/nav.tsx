@@ -45,6 +45,9 @@ export default function Navbar() {
 
          <Link href="/button" className={isActive("/button")}>
         button</Link>
+
+          <Link href="/letter" className={isActive("/letter")}>
+        letter</Link>
       </div>
     </nav>
   );
