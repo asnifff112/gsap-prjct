@@ -18,8 +18,8 @@ export default function Page() {
   const handleResume = () => tl.resume();
   const handleReverse = () => tl.reverse();
   const handleRestart = () => tl.restart();
-  const handleSpeed = () => tl.timeScale(2); // double speed
-  const handleSeek = () => tl.seek(1); // jump to 1 second in timeline
+
+ 
 
   return (
     <div style={{ padding: "20px" }}>
@@ -38,8 +38,8 @@ export default function Page() {
         <button onClick={handleResume}>Resume</button>
         <button onClick={handleReverse}>Reverse</button>
         <button onClick={handleRestart}>Restart</button>
-        <button onClick={handleSpeed}>2x Speed</button>
-        <button onClick={handleSeek}>Seek 1s</button>
+        
+       
       </div>
     </div>
   );
