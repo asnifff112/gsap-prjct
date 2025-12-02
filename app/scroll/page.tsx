@@ -11,6 +11,7 @@ export default function ScrollMeetBoxes() {
   const rightBox = useRef(null);
   
   useEffect(() => {
+
     gsap.fromTo(
       leftBox.current,
       { x: -300, opacity: 0 },
@@ -26,6 +27,7 @@ export default function ScrollMeetBoxes() {
           scrub: true,
         },
       }
+      
     );
     gsap.fromTo(
       rightBox.current,
