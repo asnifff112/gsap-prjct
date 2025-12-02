@@ -17,6 +17,7 @@ export default function Page() {
         ".boxx",
         {opacity:0,x:200},
         {duration:2,opacity:1,x:0,ease:"power2.out"}
+        
     );
   },[])
 

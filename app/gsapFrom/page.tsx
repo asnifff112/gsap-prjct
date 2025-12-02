@@ -36,6 +36,7 @@ export default function Page() {
         width:"100px",
         height:"100px",
         background:"red"
+        
         }}
         ></div>
     </div>
