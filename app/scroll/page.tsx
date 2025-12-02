@@ -27,7 +27,7 @@ export default function ScrollMeetBoxes() {
           scrub: true,
         },
       }
-      
+
     );
     gsap.fromTo(
       rightBox.current,
