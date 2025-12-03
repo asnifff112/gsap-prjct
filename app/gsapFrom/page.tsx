@@ -23,9 +23,11 @@ export default function Page() {
     })
   },[])
 
+
   useEffect(() =>{
     gsap.from(boxx.current,{x:100,duration:1})
   },[])
+  
 
   return (
     <div>
