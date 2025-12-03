@@ -30,6 +30,7 @@ export default function Page() {
           height: "80px",
           background: "tomato",
           borderRadius: "8px",
+          
         }}
       ></div>
 
