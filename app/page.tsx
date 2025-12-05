@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -11,6 +11,7 @@ export default function LandingPage() {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const [text, setText] = useState("");
 
   
   const heroRef = useRef<HTMLDivElement>(null);
@@ -127,6 +128,25 @@ export default function LandingPage() {
           nokku makkale nokku
         </p>
       </section>
+     
+
+
+
+  
+
+  
+    <div>
+      <input
+        type="text"
+        placeholder="Type something..."
+        onChange={(e) => setText(e.target.value)}
+      />
+      
+      <p>{text}</p>
     </div>
+
+
+</div>
+    
   );
 }
